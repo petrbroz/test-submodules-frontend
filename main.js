@@ -1,6 +1,6 @@
 /// import * as Autodesk from "@types/forge-viewer";
 
-const API_HOST = API_HOST || '';
+const API_HOST = ''; // If needed, define a custom hostname of the backend server
 
 Autodesk.Viewing.Initializer({ getAccessToken }, async function () {
     const viewer = new Autodesk.Viewing.GuiViewer3D(document.getElementById('preview'));
